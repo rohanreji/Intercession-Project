@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#95a5a6">
+
+    <TextView
+        android:id="@+id/ctitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Pray For The University"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:background="#f39c12"/>
+ <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_below="@+id/ctitle"
+       >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="O Eternal God, bless all schools, colleges, and universities"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+    <TextView
+        android:id="@+id/cnames"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text=""
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+            
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="that they may be lively centers for sound learning, new discovery, and the pursuit of wisdom;
+and grant that those who teach and those who learn may find
+you to be the source of all truth; through Jesus Christ our Lord.
+
+Amen.
+"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+       <TextView
+        android:id="@+id/ccords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text=""
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+   
+        </LinearLayout>
+    </ScrollView>
+ 
+</RelativeLayout>

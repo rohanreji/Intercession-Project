@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maangalabs.prayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.maangalabs.prayer.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.maangalabs.prayer.NavDrawerItem"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="com.maangalabs.prayer.NavDrawerListAdapter"
+            android:label="@string/app_name" >
+            
+        </activity>
+         <activity
+            android:name="com.maangalabs.prayer.HomeFragment"
+            android:label="@string/app_name" >
+            
+        </activity>
+        
+          <service
+  android:name="MyService"
+  
+
+  >
+           
+</service>
+<receiver android:name="RestartServices" >
+        <intent-filter>
+            <action android:name="android.intent.action.BOOT_COMPLETED" >
+            </action>
+             <action android:name="neverdie" >
+            </action>
+             <action android:name="android.nfc.action.TAG_DISCOVERED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+             
+          
+             
+        </intent-filter>
+        
+    </receiver>
+    </application>
+
+</manifest>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#95a5a6"
+    >
+
+ <TimePicker
+     android:id="@+id/timePicker1"
+      android:textColor="#ffffff"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_centerVertical="true" />
+
+ <CheckBox
+     android:id="@+id/checkBox1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_alignParentRight="true"
+     android:layout_below="@+id/timePicker1"
+     android:layout_marginRight="30dp"
+     android:layout_marginTop="21dp"
+     android:text="notify me" 
+    />
+
+</RelativeLayout>
