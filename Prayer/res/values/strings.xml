@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">Prayer</string>
+    <string name="app_name">Prayer Up</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    
+     <string name="prayer">
+ into your mighty hands.
  
- 
+   </string>
+     <string name="prayer2">Bless the management, staff and the
+   </string>
    
+      <string name="prayer3">students of this institution abundantly.</string>
+     <string name="prayer4">We pray that your kingdom may</string>
    
+           <string name="prayer5">flourish in this institution through the</string>
+    <string name="prayer6">ministry of Jesus Youth.  </string>
+    <string name="prayer7">Fill them with your Holy Spirit. </string>
+    <string name="prayer8">Enable this institution to be</string>
+    <string name="prayer9">a factory of saints.
+   </string>
+    <string name="prayer10">Amen
+   </string>
+   
+     
     <string name="drawer_open">Slider Menu Opened</string>
     <string name="drawer_close">Slider Menu Closed</string>
      

@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#95a5a6"
+   android:background="#3B5998"
     >
 
  <TimePicker
@@ -21,6 +21,7 @@
      android:layout_marginRight="30dp"
      android:layout_marginTop="21dp"
      android:text="notify me" 
+     android:checked="true"
     />
 
 </RelativeLayout>

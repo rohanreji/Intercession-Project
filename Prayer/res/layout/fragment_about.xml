@@ -1,7 +1,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#95a5a6" >
+     android:background="#95a5a6" >
+     
+          <HorizontalScrollView
+            android:id="@+id/scrollView1"
+       
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:layout_below="@+id/ctitle1" >
+    
+     <ScrollView
+         android:id="@+id/horizontalScrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       
+       >
+      <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+     >
 
     <TextView
         android:id="@+id/textView1"
@@ -13,7 +31,7 @@
         android:text="MEST Initiative"
         android:textAppearance="?android:attr/textAppearanceLarge"
       	
-        android:textColor="#f39c12" />
+        android:textColor="#c0392b" />
 
     <TextView
         android:id="@+id/textView2"
@@ -24,8 +42,87 @@
         android:layout_marginTop="25dp"
         android:layout_marginLeft="20dp"
          android:layout_marginRight="20dp"
-        android:text="An intercession program for all the colleges, both medical and engineering colleges, across Kerala organized by\nJesus Youth\nMedical Engineering Students Team"
+        android:text="An intercession program"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView2"
+        
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:text="\nfor all the colleges,both medical"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:textColor="#ffffff" />
+    
+    <TextView
+        android:id="@+id/textView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView53"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:text="\nand engineering colleges, across"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    
+     <TextView
+        android:id="@+id/textView55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView54"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:text="\nKerala organized by"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+     
+       <TextView
+        android:id="@+id/textView56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView55"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:text="\nJesus Youth"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+     <TextView
+        android:id="@+id/textView57"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView56"
+        android:layout_marginLeft="20dp"
+         android:layout_marginRight="20dp"
+        android:text="\nMedical Engineering Students Team"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#ffffff" />
+    
+    
+    
+     <Button
+        android:id="@+id/button1"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView57"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp"
+        android:background="#3B5998"
+        android:onClick="ev1"
+        android:textColor="#fff"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:text="facebook" />
+     </RelativeLayout>
+     </ScrollView>
+     </HorizontalScrollView>
    
 </RelativeLayout>

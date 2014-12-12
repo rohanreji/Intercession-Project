@@ -31,12 +31,12 @@ import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
-@SuppressLint("NewApi") public class SettingsFragment extends Fragment {
+ public class SettingsFragment extends  android.support.v4.app.Fragment {
 	//  public static TimePicker ti;
     public SettingsFragment(){}
      TextView ct,cn,cc,ct1;
      CheckBox ch;
-     int maxcount=220;
+     int maxcount=250;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {

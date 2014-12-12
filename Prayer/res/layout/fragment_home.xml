@@ -2,52 +2,90 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#95a5a6">
+    android:background="#7f8c8d">
 
+        <RelativeLayout
+              android:id="@+id/ctitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+              
+             android:background="#F39C12">
     <TextView
         android:id="@+id/ctitle"
+        android:layout_width="wrap_content"
+      
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+       android:scrollHorizontally="false"
+       android:ellipsize="none"
+        android:paddingLeft="20dp"
+        
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:text="Pray For The University"
+        android:textColor="#fff"
+        android:textAppearance="?android:attr/textAppearanceLarge" 
+        android:background="#F39C12"/>
+   
+    </RelativeLayout>
+        <HorizontalScrollView
+            android:id="@+id/scrollView1"
+       
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:paddingLeft="20dp"
-        android:paddingBottom="10dp"
-        android:paddingTop="10dp"
-        android:text="Pray For The University"
-        android:textAppearance="?android:attr/textAppearanceLarge" 
-        android:background="#f39c12"/>
- <ScrollView
-        android:id="@+id/scrollView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-         android:layout_below="@+id/ctitle"
-       >
+          android:layout_below="@+id/ctitle1" >
+    
+     <ScrollView
+         android:id="@+id/horizontalScrollView1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content" >
 
+      <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+     >
+   <TextView
+                android:id="@+id/ctitle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+             
+                android:paddingTop="10dp"
+                
+                android:gravity="center"
+              
+              
+                android:text="250\ndays"
+             
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#6600CC" />
         <LinearLayout
-            android:layout_width="match_parent"
+            android:id="@+id/ll90"
+            android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical" >
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="26dp"
-        android:layout_marginRight="25dp"
-        android:textColor="#fff"
-        android:text="O Eternal God, bless all schools, colleges, and universities"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+            android:orientation="vertical"
+            android:layout_below="@id/ctitle2" >
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:text="Oh Jesus, our master"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#fff" />
+
+
             
     <TextView
         android:id="@+id/cnames"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textView1"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="26dp"
+      
+        android:layout_marginLeft="20dp"
+     
         android:layout_marginRight="25dp"
         android:textColor="#fff"
         android:text=""
@@ -56,25 +94,125 @@
             
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
-        android:layout_marginLeft="25dp"
-        android:layout_marginTop="26dp"
+        android:layout_marginLeft="20dp"
+  
         android:layout_marginRight="25dp"
         android:textColor="#fff"
-        android:text="that they may be lively centers for sound learning, new discovery, and the pursuit of wisdom;
-and grant that those who teach and those who learn may find
-you to be the source of all truth; through Jesus Christ our Lord.
+        android:text="@string/prayer"
 
-Amen.
-"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textView44"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginLeft="20dp"
+       
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer2"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    
+    <TextView
+        android:id="@+id/textView45"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView44"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer3"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textView46"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView45"
+        android:layout_marginLeft="20dp"
+      android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer4"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textView47"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView46"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer5"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+        android:id="@+id/textView48"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView47"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer6"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <TextView
+        android:id="@+id/textView49"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView48"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer7"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+      <TextView
+        android:id="@+id/textView50"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView49"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer8"
+
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+       <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView50"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="25dp"
+        android:textColor="#fff"
+        android:text="@string/prayer9"
+
         android:textAppearance="?android:attr/textAppearanceMedium" />
     
        <TextView
         android:id="@+id/ccords"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
@@ -88,6 +226,29 @@ Amen.
 
    
         </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
- 
+        </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="14"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="90dp"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/textView12"
+        android:text="DAYS"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:visibility="invisible" />
+
 </RelativeLayout>
